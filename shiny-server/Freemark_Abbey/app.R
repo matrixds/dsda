@@ -30,22 +30,11 @@ library(tidyverse)
 library(ggplot2)
 
 ########################################################################################
-# Shiny server runs on different paths than Rstudio
-# We use a production variable to specify wether we are running the app
-# in development mode from within Rstudio or in production
+# Reading in our prediction data to the application
 ########################################################################################
 
-production <- TRUE
+prediction <- readRDS("prediction.RData")
 
-if(production == FALSE) {
-  shiny_path <- "~/shiny-server/Freemark_Abbey/"
-  home_path <- "~/"
-} else {
-  shiny_path <- "/srv/shiny-server/Freemark_Abbey/"
-  home_path <- "/srv/"
-}
-
-prediction <- readRDS(paste0(home_path,"data/prediction.RData"))
 ########################################################################################
 # Shiny applications have 2 main components, the UI and the logic
 # Here we define our UI and use the package Shiny daschboards to help create everything
