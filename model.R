@@ -164,3 +164,8 @@ plot(x = set$PRCPt1,
      col = set$Color)
 contour(X1, X2, matrix(as.numeric(y_grid), length(X1), length(X2)), add = TRUE)
 
+#####################################################################
+# Your turn!
+# explore varous feature combinations and lags to improve your model performance
+#####################################################################
+

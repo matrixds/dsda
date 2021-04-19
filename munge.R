@@ -13,7 +13,7 @@ library(lubridate)
 # Reading a csv file into R and putting it in data table format
 #####################################################################
 
-weather <- read.csv("~/data/Vineyard_weather_1948-2017.csv")
+weather <- read.csv("dsda/data/Vineyard_weather_1948-2017.csv")
 
 #####################################################################
 # Lets do some exploration of this data set in the console
@@ -154,3 +154,11 @@ relevant2 %>%
 
 pairs(relevant2)
 
+#####################################################################
+# Your turn!
+# create 5 exploratory visuals using the R Graphics Cookbook Recipies
+#####################################################################
+
+# this is just a place holder to get you started
+weather %>%
+  ggplot(aes(x = ?, y = ?))
