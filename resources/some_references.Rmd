@@ -1,0 +1,14 @@
+---
+title: "Resources"
+author: "Isaac J. Faber"
+date: "4/19/2021"
+output: html_document
+---
+
+## R Resourcs
+
+This is a basic list of resourcs for using R.
+
+* [Swirl - Learn R in R](https://swirlstats.com/)
+* [R for Data Science](https://r4ds.had.co.nz/)
+* [R Graphics Cookbook](https://r-graphics.org/)
